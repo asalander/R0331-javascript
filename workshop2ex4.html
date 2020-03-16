@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Welcome to the course!</h1>
+
+    <button onclick="myFunction()">Confirm your student status</button>
+
+    <p id="demo"></p>
+
+    <script>
+      function myFunction() {
+        var txt;
+        var r = confirm("Are you a student?\nClick either OK or CANCEL.");
+        if (r == true) {
+          txt = "Welcome student!";
+        } else {
+          txt = "Sorry, this page is for students only.";
+        }
+        document.getElementById("demo").innerHTML = txt;
+      }
+    </script>
+  </body>
+</html>
