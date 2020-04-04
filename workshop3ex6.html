@@ -106,28 +106,35 @@ function showXY(event){
   var x=event.clientX;
   var y=event.clientY;
   var coord="X coord: " + x + ", Y coord: " + y;
-  document.getElementById("coordinates").innerHTML=coord;
+  document.getElementById('coordinates').innerHTML=coord;
 }
 
+
 function getLocation() {
-    var x = document.getElementById("demo");
+  var x = document.getElementById('demo');
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
   } else { 
     x.innerHTML = "Geolocation is not supported by this browser.";
   }
 }
-
 function showPosition(position) {
-var x = document.getElementById("demo");
+  var x = document.getElementById('demo');
   x.innerHTML = "Latitude: " + position.coords.latitude + 
   "<br>Longitude: " + position.coords.longitude;
 }
 function showLocation(){
+  var loc = document.getElementById('map');
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(locPosition);
+  } else { 
+    loc.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+function locPosition(position){
 var latlon = position.coords.latitude + "," + position.coords.longitude;
 var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="+latlon+"&zoom=14&size=400x300&sensor=false";
-
-document.getElementById("map").innerHTML = "<img src='"+img_url+"'>";
+document.getElementById('map').innerHTML = "<img src='"+img_url+"'>";
 }
 </script>
 
