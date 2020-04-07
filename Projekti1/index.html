@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <link rel="stylesheet" href="tyyli1.css" />
+    <title>Projekti 1</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <div>
+      <h1>Pid&auml; asiat j&auml;rjestyksess&auml;</h1>
+      Teht&auml;v&auml;: <input type="text" name="todo" id="input" />
+      <span onclick="createNewElement()" class="luo-Button"
+        >Lis&auml;&auml;</span
+      ><span id="feedback"></span>
+      <h2>Teht&auml;v&auml;lista</h2>
+      <ul id="lista"></ul>
+      <button type="button" id="clear-list" onclick="removeAll()">
+        Poista kaikki
+      </button>
+    </div>
+    <script src="koodit.js"></script>
+  </body>
+</html>

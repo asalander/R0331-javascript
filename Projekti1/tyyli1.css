@@ -1,0 +1,81 @@
+body {
+  background-color: lavender;
+  color: darkslateblue;
+  font-family: Calibri;
+}
+* {
+  box-sizing: border-box;
+}
+h1 {
+  color: slateblue;
+  font-weight: bold;
+  font-family: Calibri;
+}
+h2 {
+  color: slateblue;
+  font-family: Calibri;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 10px 8px 10px 30px;
+  list-style-type: none;
+  background: none;
+  font-size: 18px;
+  transition: 0.2s;
+  /* making list un-selectable */
+
+  -webkit-user-select: none;
+  -moz-user-serlect: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+ul li:hover {
+  background-color: mediumpurple;
+}
+ul li.checked {
+  background: lightsteelblue;
+  color: black;
+  text-decoration: line-through;
+}
+#clear-list {
+  background-color: blueviolet;
+  color: black;
+  font-weight: bold;
+  margin: 40px 11%;
+  padding: 10px;
+}
+.luo-Button {
+  padding: 8px 10px 8px 10px;
+  background-color: blueviolet;
+  color: lavender;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+.hide {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px 15px 10px 15px;
+}
+.hide:hover {
+  background: midnightblue;
+  color: lavender;
+}
+#input {
+  margin: 0;
+  width: 15%;
+  padding: 5px;
+  margin: 0;
+  border-radius: 0;
+}
