@@ -1,7 +1,17 @@
 //Lisää-nappi html-tiedostossa onclick=createNewElement
 
+var myToDo = document.getElementsByTagName("li");
+var index;
+for (index = 0; index < myToDo.length; index++) {
+  var span = document.createElement("SPAN");
+  var someTxt = document.createTextNode("POISTA");
+  span.className = "hide";
+  span.appendChild(someTxt);
+  myToDo[index].appendChild(span);
+}
 //Poista-nappi piilottaa rivit (ajetetaan myös function ulkopuolella)
 var poistaButton = document.getElementsByClassName("hide");
+var i;
 for (i = 0; i < poistaButton.length; i++) {
   poistaButton[i].onclick = function () {
     var TheDel = this.parentElement;
@@ -38,12 +48,13 @@ function createNewElement() {
   document.getElementById("input").value = "";
 
   //luodaan poistomerkki (span) nimeltään POISTA ja lisätään se listaan(li)
-  var SpanTag = document.createElement("SPAN");
+  var span = document.createElement("SPAN");
   var txt = document.createTextNode("POISTA");
-  SpanTag.classname = "hide";
-  SpanTag.appendChild(txt);
-  li.appendChild(SpanTag);
+  span.classname = "hide";
+  span.appendChild(txt);
+  li.appendChild(span);
   //luodaan silmukka, joka käy li-listan läpi ja poista-nappia painamalla rivi piilotetaan
+
   for (i = 0; i < poistaButton.length; i++) {
     poistaButton[i].onclick = function () {
       var TheDel = this.parentElement;

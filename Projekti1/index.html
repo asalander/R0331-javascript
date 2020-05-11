@@ -5,15 +5,18 @@
     <title>Projekti 1</title>
     <meta charset="utf-8" />
   </head>
-  <body>
+  <body onload="retrieveData();">
     <div>
       <h1>Pid&auml; asiat j&auml;rjestyksess&auml;</h1>
       Teht&auml;v&auml;: <input type="text" name="todo" id="input" />
       <span onclick="createNewElement()" class="luo-Button"
         >Lis&auml;&auml;</span
-      ><span id="feedback"></span>
+      >
+      <span id="feedback"></span>
       <h2>Teht&auml;v&auml;lista</h2>
       <ul id="lista"></ul>
+      <li>Eka asia</li>
+      <li>Toka asia</li>
       <button type="button" id="clear-list" onclick="removeAll()">
         Poista kaikki
       </button>
