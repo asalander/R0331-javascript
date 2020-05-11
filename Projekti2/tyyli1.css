@@ -1,0 +1,76 @@
+body {
+  background-color: lavender;
+  color: darkslateblue;
+  font-family: Calibri;
+  margin: 20px;
+  min-width: 300px;
+}
+
+h1 {
+  color: slateblue;
+  font-weight: bold;
+  font-family: Calibri;
+}
+h2 {
+  color: slateblue;
+  font-family: Calibri;
+}
+h3 {
+  color: slateblue;
+  font-family: Calibri;
+}
+h4,
+h5 {
+  color: slateblue;
+  font-family: Calibri;
+}
+
+#country {
+  background-color: blueviolet;
+  color: lavender;
+  font-weight: bold;
+  margin: 20px;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+#search,
+#summary {
+  padding: 10px 10px 10px 10px;
+  margin: 20px;
+  background-color: blueviolet;
+  color: lavender;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+table {
+  border-collapse: collapse;
+  width: 1000px;
+  border: 2px solid blueviolet;
+  text-align: center;
+  position: center;
+}
+th,
+td {
+  padding: 4px;
+  font-family: Calibri;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+th,
+td {
+  border: 1px solid #ddd;
+}
+td {
+  height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  width: 1000px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <link rel="stylesheet" href="tyyli1.css" />
+    <title>Projekti 2</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <h2>
+      T&auml;ll&auml; sivulla voit hakea tietoa Coronavirus Covid-19
+      levinneisyydest&auml;.
+    </h2>
+    <p>
+      Hakujen taustalla toimii ilmainen Covid19 API, joka perustuu John
+      Hopkinsin yliopiston yll&auml;pit&auml;m&auml;&auml;n tietokantaan.
+    </p>
+    <br />
+    <h4>Hae yksitt&auml;isen maan tautikehityksen tilanne taulukkoon</h4>
+    <p>
+      Valitse maa:
+      <select name="mySelect" id="country" onchange="loadJSONDocWithParse()">
+        <option value="">Maa</option>
+        <option value="spain">Espanja</option>
+        <option value="italy">Italia</option>
+        <option value="china">Kiina</option>
+        <option value="norway">Norja</option>
+        <option value="sweden">Ruotsi</option>
+        <option value="germany">Saksa</option>
+        <option value="finland">Suomi</option>
+        <option value="united-states">Yhdysvallat</option>
+      </select>
+    </p>
+    <h4>
+      Hae yhteenveto kaikista maista eriteltyn&auml; taulukkoon
+      <button onclick=" loadParseSummary()" id="summary">Yhteenveto</button>
+    </h4>
+    <h4>
+      Hae koko maailman tautitilanne
+      <button onclick=" loadParse()" id="search">Koko maailma</button>
+    </h4>
+    <br />
+    <div id="covid"></div>
+    <script src="koodit.js"></script>
+  </body>
+</html>
